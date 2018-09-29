@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400" prefWidth="600" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coffemakerfine.FXMLDocumentController">
+    <children>
+        <Text layoutX="200" layoutY="20" text="Make a cup of coffee"/>        
+
+        <Button layoutX="200" layoutY="50" text="Make capuchino" onAction="#btnMake" fx:id="buttonMake" />
+        <Button layoutX="400" layoutY="50" text="Make espresso" onAction="#btnMakeEx" fx:id="buttonMakeEx" />
+
+        <TextField layoutX="140" layoutY="80" fx:id="add"/>
+        <Button layoutX="120" layoutY="120" text="Add water" onAction="#btnAddWater" fx:id="buttonAddWater"/> 
+        <Button layoutX="240" layoutY="120" text="Add milk" onAction="#btnAddMilk" fx:id="buttonAddMilk"/>         
+        <Button layoutX="360" layoutY="120" text="Add coffee" onAction="#btnAddCoffee" fx:id="buttonAddCoffe"/> 
+        
+        <Button layoutX="200" layoutY="170" text="Clean" onAction="#btnClean" fx:id="buttonClean"/> 
+                         
+        <Text layoutX="30" layoutY="200" text="Message: "/>
+        <Label layoutX="100" layoutY="200" minHeight="16" minWidth="69" fx:id="message"/>
+        
+        <Text layoutX="30" layoutY="250" text="Amount: "/>
+        <Label layoutX="100" layoutY="250" minHeight="16" minWidth="69" fx:id="amount"/>        
+        
+
+      
+                       
+    </children>
+</AnchorPane>
